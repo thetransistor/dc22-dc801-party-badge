@@ -1,7 +1,7 @@
 # DC801 Event Badge for DC22
 Brought to you by DC801, theTransistor, and 801 Labs
 
-Special thanks to: **devino** and **nemus**
+Special thanks to: **devino**, **nemus**, and **yukaia** - the few key people in this project.
 
 
 ## Status

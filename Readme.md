@@ -18,9 +18,10 @@ Despite coming with a basic firmware, your DC801 party badge has some very nice 
   * 8  kB ram
   * 4  kB EEPROM
 2. nRF8001 Bluetooth LE module
-3. MC33063ADR LiPo Charger
-4. CU16025-UW6J 20x2 VFD Display
-5. IS31AP4991 AB Audio Amplifier w. mini speaker
+3. MCP73833-FCI/UN LiPo Charger
+  * Low Voltage Protection
+4. CU16025-UW6J 16x2 VFD Display
+5. IS31AP4991 AB Audio Amplifier w/ mini speaker
 6. WS2812B RGB Led
 7. Test LED (on the rear of the board)
 8. 4 User Buttons, and 1 Reset Button

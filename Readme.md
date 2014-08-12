@@ -50,6 +50,12 @@ No special cables or software is required to flash pre-built images! :D
 6. ???
 7. Profit.
 
+## Setting up the toolchain
+To compile code to run on this badge, you will need the compiler from https://launchpad.net/gcc-arm-embedded
+The gcc-arm-none-eabi that Ubuntu pulls in by default will not work right.
+
+Binaries need to be padded to 64k.  A tool to accomplish this is included in the source and called by the Makefile.
+
 ## Updates
 New firmware should be released on the github, along with the source code. If you have a feature request, please contact us through github. Code updates should continue for the next several months or longer.
 

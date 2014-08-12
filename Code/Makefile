@@ -6,12 +6,12 @@ OPTIMIZATION = 1
 
 #########################################################################
 
-SRC=$(wildcard core/*.c)  $(wildcard core/libs/*.c) drivers/vfd.c drivers/armmath.c drivers/ssp1.c $(wildcard *.c)
+SRC=$(wildcard core/*.c)  $(wildcard core/libs/*.c) $(wildcard drivers/*.c) $(wildcard *.c)
 
 
 OBJECTS= $(SRC:.c=.o) 
 LSSFILES= $(SRC:.c=.lst) 
-HEADERS=$(wildcard core/*.h) $(wildcard core/inc/*.h) drivers/armmath.h drivers/vfd.h $(wildcard *.h)
+HEADERS=$(wildcard core/*.h) $(wildcard core/inc/*.h) $(wildcard drivers/*.h) $(wildcard *.h)
 
 #  Compiler Options
 GCFLAGS = -std=gnu99 -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -I. -Icore -Icore/inc

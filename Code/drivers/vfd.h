@@ -39,8 +39,10 @@ typedef enum {
 } ePowerstate;
 
 typedef enum {
-	INIT,			//! Initialize
-	CLEAR			//! Clear the display
+	VFD_INIT,			//! Initialize
+	VFD_CLEAR,			//! Clear the display
+	VFD_ENABLE,		//! Enable display
+	VFD_DISABLE		//! Disable display
 } eCommand;
 
 typedef struct{

@@ -31,7 +31,7 @@ void VFDInit(void) {
 	VFD_STROBE_STOP;
 	
 //	VFDSendCommand(0b00001111);
-	VFDSendCommand(INIT);
+	VFDSendCommand(VFD_INIT);
 	
 	VFDSetPower(ON);
 
@@ -73,6 +73,7 @@ uint8_t VFDSetPower(ePowerstate newState) {
 }
 
 
+
 /**
  * @brief Send a command to the display
  * @param command
@@ -84,10 +85,10 @@ uint8_t VFDSendCommand(eCommand command) {
 	sspSend(VFD_COMMAND_BYTE);
 
 	switch(command){
-		case CLEAR:
+		case VFD_CLEAR:
 			sspSend(1);
 			break;
-		case INIT:
+		case VFD_INIT:
 			sspSend(0b00001111);
 			break;
 		default:

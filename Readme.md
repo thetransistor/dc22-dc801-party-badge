@@ -1,7 +1,23 @@
 # DC801 Event Badge for DC22
 Brought to you by DC801, theTransistor, and 801 Labs
 
-Special thanks to: **devino**, **nemus**, and **yukaia** - the few key people in this project.
+
+## Extra special thanks to the few key people in this project.
++ **devino**, for the hardware design, and PCB population
++ **nemus**, for code / sanity
++ **yukaia**, for the bulk of the assembly / sanity
++ **Isaac / RustedFriend**, for machining the HPDE
++ **DC801**, for "hacking all the things" ;)
+
+
+### Notes
+There has been some confusion on the charging circuit. First, NO the battery should not burst into flames and kill everything if you leave it plugged in, charging. The batter has a built-in over / under voltage / thermal protection circuit.
+
+The battery charging chip also has some protection circuits built-in. To be safe, don't leave the battery in the sun / anywhere too hot / cold. And try not to physically abuse it.
+
+If you run your battery "empty", it might have a problem charging, as it will try to power the VFD on, which takes about 200mA initially. You currently have 2 easy options (we will fix this in firmware).
+1. Put the badge in programming mode by holding down the second button, and hitting the reset button with a paper-clip.
+2. Use a 1amp+ dedicated USB charger instead of a computer port to charge the battery.
 
 
 ## Status

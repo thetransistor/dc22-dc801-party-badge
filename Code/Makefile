@@ -25,12 +25,14 @@ GCFLAGS = -std=gnu99 -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -I. -Icore -Icore
 
 LDFLAGS =  -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -nostartfiles  -T$(LDCRIPT) 
 
+TOOLCHAINPATH = /opt/gcc-arm-none-eabi/bin
 
 #  Compiler/Linker Paths
-GCC = arm-none-eabi-gcc
-OBJCOPY = arm-none-eabi-objcopy
+GCC = $(TOOLCHAINPATH)/arm-none-eabi-gcc
+OBJCOPY = $(TOOLCHAINPATH)/arm-none-eabi-objcopy
 REMOVE = rm -f
-SIZE = arm-none-eabi-size
+SIZE = $(TOOLCHAINPATH)/arm-none-eabi-size
+STRIP = $(TOOLCHAINPATH)/arm-none-eabi-strip
 
 #########################################################################
 
@@ -47,7 +49,7 @@ firmware.bin: $(PROJECT).elf Makefile
 $(PROJECT).elf: $(OBJECTS) Makefile
 	@echo "  \033[1;34mLD \033[0m (\033[1;33m $(OBJECTS)\033[0m) -> $(PROJECT).elf"
 	@$(GCC) $(LDFLAGS) $(OBJECTS) -o $(PROJECT).elf -lm
-	arm-none-eabi-strip -s $(PROJECT).elf
+	$(STRIP) -s $(PROJECT).elf
 
 stats: $(PROJECT).elf Makefile
 	$(SIZE) $(PROJECT).elf

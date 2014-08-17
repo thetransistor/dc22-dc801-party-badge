@@ -1,4 +1,4 @@
-PROJECT=template
+PROJECT=dc22-dc801-party-badge
 
 LDCRIPT=core/lpc1347.ld
 
@@ -6,12 +6,19 @@ OPTIMIZATION = 1
 
 #########################################################################
 
-SRC=$(wildcard core/*.c)  $(wildcard core/libs/*.c) $(wildcard drivers/*.c) $(wildcard *.c)
+SRC=$(wildcard core/*.c) \
+    $(wildcard core/libs/*.c) \
+    $(wildcard drivers/*.c) \
+    $(wildcard *.c)
 
 
 OBJECTS= $(SRC:.c=.o) 
 LSSFILES= $(SRC:.c=.lst) 
-HEADERS=$(wildcard core/*.h) $(wildcard core/inc/*.h) $(wildcard drivers/*.h) $(wildcard *.h)
+
+HEADERS=$(wildcard core/*.h) \
+		$(wildcard core/inc/*.h) \
+		$(wildcard drivers/*.h) \
+		$(wildcard *.h)
 
 #  Compiler Options
 GCFLAGS = -std=gnu99 -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -I. -Icore -Icore/inc
@@ -25,6 +32,8 @@ GCFLAGS = -std=gnu99 -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -I. -Icore -Icore
 
 LDFLAGS =  -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -nostartfiles  -T$(LDCRIPT) 
 
+# This is where you stuck your ARM toolchain that you downloaded from
+# https://launchpad.net/gcc-arm-embedded
 TOOLCHAINPATH = /opt/gcc-arm-none-eabi/bin
 
 #  Compiler/Linker Paths
@@ -70,6 +79,7 @@ clean:
 
 #########################################################################
 
+# This works well for dev on a Mac
 flash: firmware.bin
 	cp firmware.bin /Volumes/CRP\ DISABLD/
 	diskutil eject `diskutil list | grep -B 2 CRP | grep dev`

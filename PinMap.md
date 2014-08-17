@@ -4,12 +4,12 @@ This document is intended to be a quick reference to the pin mapping.
 ###BUTTONS
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
-| 3  | RESET | INPUT | externally pulled high (far right button) |
+| ~~14~~ | ~~PIO0_3~~ | ~~INPUT~~ | ~~BTN5 - internal pull-up (far left button)~~ |
 | 13 | PIO1_20 | INPUT | BTN1 - internal pull-up |
 | 4  | PIO0_1 | INPUT | BTN2 - internal pull-up / USB_FTOGGLE |
 | 2  | PIO1_19 | INPUT | BTN3 - internal pull-up |
 | 40 | PIO0_16 | INPUT | BTN4 / WAKEUP - externally pulled high |
-| ~~14~~ | ~~PIO0_3~~ | ~~INPUT~~ | ~~BTN5 - internal pull-up (far left button)~~ |
+| 3  | RESET | INPUT | externally pulled high (far right button) |
 
 ###BLUETOOTH
 | CHIP PIN | PORT_BIT | I/O | NOTES |

@@ -1,14 +1,16 @@
 # Hardware Information
 
-## Files - Version 0
+### Files - Version 0
 DEF2014.dch - Schematic
+
 DEF2014.dip - Board
+
 This design was created by Devino with Diptrace: http://diptrace.com/
 
 This was our dev. board AND our prod. board... We'll release updated files / fixes as needed. We'll work on making next year a lot smoother release. Thanks again to everyone that has helped support us.
 
 
-## Datasheets
+### Datasheets
 
 1. NXP LCP1347 mCU
   * http://www.nxp.com/documents/user_manual/UM10524.pdf
@@ -24,5 +26,5 @@ This was our dev. board AND our prod. board... We'll release updated files / fix
   * https://www.mikrocontroller.net/attachment/180459/WS2812B_preliminary.pdf
 
 
-## HELP!
+### HELP!
 Please feel free to contact us with any questions you may have.

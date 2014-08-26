@@ -1,7 +1,7 @@
-#Pin Mappings
+# Pin Mappings
 This document is intended to be a quick reference to the pin mapping.
 
-###BUTTONS
+### BUTTONS
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | ~~14~~ | ~~PIO0_3~~ | ~~INPUT~~ | ~~BTN5 - internal pull-up (far left button)~~ |
@@ -11,7 +11,7 @@ This document is intended to be a quick reference to the pin mapping.
 | 40 | PIO0_16 | INPUT | BTN4 / WAKEUP - externally pulled high |
 | 3  | RESET | INPUT | externally pulled high (far right button) |
 
-###BLUETOOTH
+### BLUETOOTH
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 26 | PIO1_21 | OUTPUT | BLUE_NRESET |
@@ -21,7 +21,7 @@ This document is intended to be a quick reference to the pin mapping.
 | 30 | PIO0_22 | INPUT | BLUE_REQN |
 | 45 | PIO0_17 | INPUT | BLUE_ACTIVE |
 
-###VFD
+### VFD
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 15 | PIO0_4 | OUTPUT | VFD_PW_EN - active low, externally pulled high |
@@ -29,30 +29,30 @@ This document is intended to be a quick reference to the pin mapping.
 | 38 | PIO1_22 | OUTPUT | MOSI1 |
 | 43 | PIO1_15 | OUTPUT | SCK1 |
 
-###USB
+### USB
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 18 | PIO1_23 | INPUT | VBUS_SENSE |
 | 22 | PIO0_6 | OUTPUT | USB_CONNECT (active low) |
 
-###AUDIO
+### AUDIO
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 24 | PIO1_28 | OUTPUT | AUDIO OUT (use PWM?) |
 | 25 | PIO1_31 | OUTPUT | AUDIO STANDBY - active low, externally pulled low |
 
-###RGB LED
+### RGB LED
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 23 | PIO0_7 | OUTPUT | RGB_DATA |
 
-###BATTERY STATUS
+### BATTERY STATUS
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 16 | PIO0_5 | INPUT | BAT_STAT2 - internal pull-up |
 | 17 | PIO0_21 | INPUT | BAT_STAT1 - internal pull-up |
 
-###DEBUGGING
+### DEBUGGING
 | CHIP PIN | PORT_BIT | I/O | NOTES |
 |----------|----------|-----|-------|
 | 21 | PIO1_24 | OUTPUT | LED - for simple debugging |

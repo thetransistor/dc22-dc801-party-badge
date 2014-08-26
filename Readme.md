@@ -37,7 +37,7 @@ Despite coming with a basic firmware, your DC801 party badge has some very nice 
 2. nRF8001 Bluetooth LE module
 3. MCP73833-FCI/UN LiPo Charger
   * Low Voltage Protection
-4. DS1625M 16x2 VFD Display
+4. CU16025-UW6J 16x2 VFD Display
 5. IS31AP4991 AB Audio Amplifier w/ mini speaker
 6. WS2812B RGB Led
 7. Test LED (on the rear of the board)
@@ -54,6 +54,7 @@ Despite coming with a basic firmware, your DC801 party badge has some very nice 
 5. Square, Wave audio. We've included a good sized speaker and an audio amp. Unce unce unce!
 6. Hack it. Extra GPIO up top should allow your creative juices to flow. (gross)
 
+
 ## Flashing new firmware to your badge
 No special cables or software is required to flash pre-built images! :D
 
@@ -67,8 +68,10 @@ No special cables or software is required to flash pre-built images! :D
 6. ???
 7. Profit.
 
+
 ## Updates
 New firmware should be released on the github, along with the source code. If you have a feature request, please contact us through github. Code updates should continue for the next several months or longer.
+
 
 ## Schematic / Board Notes
 We have applied a couple of hotfixes to v0.1 of the pcb, including:
@@ -76,3 +79,11 @@ We have applied a couple of hotfixes to v0.1 of the pcb, including:
 1. Removing the first button from the board and rerouting the to the USB
 2. Removing the Resistor that was connecting the BTLE RDYN to the P0_16
 3. Rerouting the BTLE RDYN to the VFD Strobe
+4. More coming soon. Warm up your Soldering-Irons
+
+### Thanks!
+
+Thanks to everyone who has helped / participated / spectated with us on this project. Sorry for the code delays, life hit some of us harder then we were expecting. We will continue working on this project. More code / updated schematics / etc should be coming soon.
+
+
+## Thanks to YOU (yes you), and to all the other awesome people in our community that make making / hacking stuff fun! :D
